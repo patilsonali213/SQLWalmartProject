@@ -208,6 +208,13 @@ FROM sales GROUP BY branch;
 SELECT day_name, AVG(rating) AS average_rating
 FROM sales GROUP BY day_name ORDER BY average_rating DESC LIMIT 1;
 
+1. COGS (Cost of Goods Sold) = Unit Price x Quantity = $45.79 x 7 = $320.53
+2. VAT (Value-Added Tax) = 5% x COGS = $16.0265
+3. Total (Gross Sales) = VAT + COGS = $336.5565
+4. Gross Profit (Gross Income) = Total - COGS = $16.0265
+5. Gross Margin Percentage = (Gross Profit / Total) x 100% ≈ 4.7619%
+
+
 # 10.Which day of the week has the best average ratings per branch?
 
 SELECT  branch, day_name,
